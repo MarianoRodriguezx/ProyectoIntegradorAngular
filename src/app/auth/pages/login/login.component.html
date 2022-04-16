@@ -1,5 +1,28 @@
-<p>login works!</p>
+<section class="form-login">
+    <img src="../../../../assets/logo_provisional.png" width="60%" class="im" alt="">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
 
-<h1>PRUEBA</h1>
+        <input 
+            class="controls" 
+            type="text" 
+            formControlName="email" 
+            placeholder="Email"
+            autofocus
+        >
 
+        <input
+            class="controls" 
+            type="password" 
+            formControlName="password" 
+            placeholder="Contraseña"
+        >
+
+        <input 
+            class="buttons" 
+            type="submit"
+        >
+        <p><a routerLink="/found_pass">¿Olvidastes tu Contraseña?</a></p>
+
+    </form>
+  </section>
 <router-outlet></router-outlet>

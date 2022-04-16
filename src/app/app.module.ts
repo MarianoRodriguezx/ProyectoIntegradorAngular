@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
 import { MaterialsModule } from './auth/materials.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LostpassComponent } from './auth/pages/lostpass/lostpass.component';
 
 @NgModule({
   declarations: [
